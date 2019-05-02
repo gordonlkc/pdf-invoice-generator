@@ -1,6 +1,6 @@
 # invoice-generator
 
-Generate your orders and you invoices and export them easily.
+Generate invoices and export them easily.
 If you want some examples, check tests.
 
 ## Install

@@ -10,4 +10,4 @@ generator.configure({
   }
 });
 
-export default generator;
+module.exports = generator;
