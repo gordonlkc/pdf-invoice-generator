@@ -1,0 +1,267 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title=invoice_header_title
+    body
+        style.
+            @import "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700";
+
+            html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, total, time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+
+            article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+
+            body {
+                line-height: 1;
+            }
+
+            ol, ul {
+                list-style: none;
+            }
+
+            blockquote, q {
+                quotes: none;
+            }
+
+            blockquote:before, blockquote:after, q:before, q:after {
+                content: '';
+                content: none;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            body {
+                width: 592px;
+                margin: auto;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 12px;
+            }
+
+            strong, .bold {
+                font-weight: 700;
+            }
+
+            #container {
+                position: relative;
+                padding: 4%;
+            }
+
+            #header > #heading {
+                float: center;
+                text-align: center;
+            }
+
+            #header > #logo {
+                width: 100%;
+                float: center;
+            }
+
+            #header > #logo > img {
+                width: 50%;
+            }
+
+            #recipient {
+                float: left;
+            }
+
+            #conclusion {
+                float: right;
+            }
+
+            #items {
+                margin-top: 10px;
+            }
+
+            #items > p {
+                font-weight: 700;
+                text-align: right;
+                margin-bottom: 1%;
+                font-size: 65%;
+            }
+
+            #items > table {
+                width: 100%;
+                font-size: 85%;
+            }
+
+            #items > table th {
+                font-weight: 400;
+                padding: 1px 4px;
+                text-align: left;
+            }
+
+            #items > table td {
+                padding: 1px 4px;
+            }
+
+            #items > table tr td:not(:first-child) {
+                text-align: left;
+            }
+
+
+            #items > table tr td:last-child, #items > table tr th:last-child {
+                text-align: right;
+            }
+
+            #items table tr td {
+                padding-top: 3px;
+                padding-bottom: 3px;
+                height: 10px;
+            }
+
+            #items table tr:nth-child(1) {
+                text-decoration: underline; 
+            }
+
+            #items table tr:nth-child(2) > td {
+                padding-top: 8px;
+            }
+
+            #summary {
+                height: 155px;
+                margin-top: 30px;
+            }
+
+            #summary #note {
+                float: left;
+                width: 260px;
+            }
+
+            #summary #note h4 {
+                font-size: 10px;
+                font-weight: 600;
+                font-style: italic;
+                margin-bottom: 4px;
+            }
+
+            #summary #note p {
+                font-size: 10px;
+                font-style: italic;
+                line-height:12px;
+            }
+
+            #summary #total table {
+                font-size: 85%;
+                width: 260px;
+                float: right;
+            }
+
+            #summary #total table td {
+                padding: 3px 4px;
+            }
+
+            #summary #total table tr td:last-child {
+                text-align: right;
+            }
+
+            #summary #total table tr:nth-child(3) {
+                background: #efefef;
+                font-weight: 600;
+            }
+
+            .balance {
+                background: #efefef;
+                display: inline-block;
+                width: 100%;
+                font-weight: 600;
+                padding: 10px 0px 10px 0px;
+                border-style: solid;
+                border-width: 2px 2px 2px 2px
+            }
+
+            #footer {
+                margin: auto;
+                position: absolute;
+                left: 4%;
+                bottom: 20px;
+                right: 4%;
+                border-top: solid grey 1px;
+            }
+
+            #footer p {
+                margin-top: 1%;
+                font-size: 65%;
+                line-height: 140%;
+                text-align: center;
+            }
+
+            .padding-table {
+                margin-top: 60px;
+            }
+        #container
+            #header
+                #logo
+                    img(src=logo, alt='')
+                br
+                br
+                #heading
+                    h3
+                        strong #{statement_heading.subject}
+                    p #{statement_heading.subtitle}
+            br
+            br
+            div
+                #recipient
+                    p
+                        strong #{recipient.title} #{recipient.first_name} #{recipient.last_name}
+                        br
+                        br
+                        h5 #{recipient.street1}
+                        
+                        h5 #{recipient.street2}
+                #conclusion
+                    table
+                        -for(var field in statement_conclusion){
+                        tr
+                            td.bold #{field}: 
+                            td #{statement_conclusion[field]}
+                        - }
+
+
+            br
+            br
+            br
+            div(style='padding-top:20px')
+                #items
+                    - var rowCounter = 0
+                    table
+                        tr
+                            each articleHeader in article_headers
+                                th #{articleHeader}
+
+                            - var rowPerPage = 0
+                            
+                            each article in articles
+                                if(rowCounter == 0)
+                                    tr
+                                        td(colspan=article.length)
+                                            div.balance
+                                                div(style="float: left;") Opening Balance (excluding FBT)
+                                                div(style="float: right;") #{article[article.length-1]}
+                                tr
+                                    each field in article
+                                        td #{field}
+
+                                if( rowCounter == articles.length-1)
+                                    tr
+                                        td(colspan=article.length)
+                                            div.balance
+                                                div(style="float: left;") Closing Balance (excluding FBT)
+                                                div(style="float: right;") #{article[article.length-1]}
+
+                                - rowCounter++;
+
+    
+

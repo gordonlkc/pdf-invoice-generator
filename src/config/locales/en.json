@@ -1,0 +1,10 @@
+{
+	"invoice_header_title": "Invoice",
+	"invoice_header_subject": "Invoice",
+	"invoice_header_reference": "Ref. :",
+	"invoice_header_date": "Invoice date :",
+	"fromto_phone": "Phone:",
+	"fromto_mail": "Email:",
+	"table_information": "table_information",
+	"footer": "Vehicle Solutions"
+}
