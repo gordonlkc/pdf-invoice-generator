@@ -216,7 +216,7 @@ export default class Generator extends Common {
       statement_conclusion: this._statement_conclusion,
       article_headers: this.article_headers,
       articles: this._articles,
-      template_configuration: this._templateConfiguration,
+      template_configuration: this._template_configuration,
       moment: moment(),
     };
   }

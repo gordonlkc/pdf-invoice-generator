@@ -78,6 +78,13 @@ footer: {
 }
 };
 
+invoice.template_configuration = {
+  subject: "Activity Statement",
+  subtitle: "Salary Packaging Statement for the period FBT year to date"
+  };
+
+console.log(invoice);
+
 invoice
 .getInvoice()
 .toPDF(options)
