@@ -15,6 +15,7 @@ export default class Generator extends Common {
     this._statement_conclusion = {};
     this._article_headers = [];
     this._articles = [];
+    this._template_configuration = {};
     this._i18nConfigure(config.language);
     this.hydrate(config.global, this._itemsToHydrate());
   }
@@ -179,6 +180,18 @@ export default class Generator extends Common {
     this._articles = [];
   }
 
+  get template_configuration() {
+    return this._template_configuration;
+  }
+
+  /**
+   * @description Set
+   * @param value
+   */
+  set template_configuration(value) {
+    this._template_configuration = value;
+  }
+
   /**
    * @description Hydrate from configuration
    * @returns {[string,string,string,string]}
@@ -202,8 +215,8 @@ export default class Generator extends Common {
       statement_heading: this._statement_heading,
       statement_conclusion: this._statement_conclusion,
       article_headers: this.article_headers,
-      articles: this.articles,
-      template_configuration: this._templateConfiguration(),
+      articles: this._articles,
+      template_configuration: this._templateConfiguration,
       moment: moment(),
     };
   }
@@ -217,7 +230,6 @@ export default class Generator extends Common {
   _compile(keys) {
     const template = this.invoice_template;
     const compiled = pug.compileFile(path.resolve(template));
-    console.log(keys);
     return compiled(keys);
   }
 
@@ -355,15 +367,6 @@ export default class Generator extends Common {
    */
   _toStreamFromPDF(content, filepath) {
     return content.toStream((err, stream) => stream.pipe(fs.createWriteStream(filepath)));
-  }
-
-  /**
-   * @description Calculates number of pages and items per page
-   * @return {{rows_in_first_page: number, rows_in_others_pages: number, loop_table: number}}
-   * @private
-   */
-  _templateConfiguration() {
-    return {}
   }
 
   /**
