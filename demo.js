@@ -81,10 +81,13 @@ footer: {
 invoice
 .getInvoice()
 .toPDF(options)
-.toFile("./invoice.pdf")
-.then(() => {
-  console.log("file created.");
-});
+.toBuffer()
+.then((result) => {
+  console.log(result);
+})
+.catch((error)=>{
+  console.log(error);
+})
 
 invoice
 .getInvoice()
