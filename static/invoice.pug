@@ -43,10 +43,9 @@ html(lang='en')
             }
 
             body {
-                width: 592px;
-                margin: auto;
+                margin: 5px 5px 5px 5px;
                 font-family: 'Open Sans', sans-serif;
-                font-size: 12px;
+                font-size: 9px;
             }
 
             strong, .bold {
@@ -93,7 +92,7 @@ html(lang='en')
 
             #items > table {
                 width: 100%;
-                font-size: 85%;
+                font-size: 75%;
             }
 
             #items > table th {
@@ -110,6 +109,10 @@ html(lang='en')
                 text-align: left;
             }
 
+            #items > table tr td:nth-child(2){
+                width:1%;
+                white-space:nowrap;
+            }
 
             #items > table tr td:last-child, #items > table tr th:last-child {
                 text-align: right;
@@ -123,10 +126,6 @@ html(lang='en')
 
             #items table tr:nth-child(1) {
                 text-decoration: underline; 
-            }
-
-            #items table tr:nth-child(2) > td {
-                padding-top: 8px;
             }
 
             #summary {
@@ -215,7 +214,7 @@ html(lang='en')
             div
                 #recipient
                     p
-                        strong #{recipient.title} #{recipient.first_name} #{recipient.last_name}
+                        strong #{recipient.name}
                         br
                         br
                         h5 #{recipient.street1}
@@ -236,32 +235,53 @@ html(lang='en')
             div(style='padding-top:20px')
                 #items
                     - var rowCounter = 0
-                    table
-                        tr
-                            each articleHeader in article_headers
-                                th #{articleHeader}
+                    - var loopTable = 1;
+                    while loopTable <= template_configuration.loop_table
+                        table
+                            tr
+                                - console.log(loopTable);
+                                each articleHeader in article_headers
+                                    th #{articleHeader}
 
-                            - var rowPerPage = 0
-                            
-                            each article in articles
-                                if(rowCounter == 0)
-                                    tr
-                                        td(colspan=article.length)
-                                            div.balance
-                                                div(style="float: left;") Opening Balance (excluding FBT)
-                                                div(style="float: right;") #{article[article.length-1]}
-                                tr
-                                    each field in article
-                                        td #{field}
-
+                                - var rowPerPage = 0
+                                
+                                - var rowPerPage = 0
+                                if loopTable === 1
+                                    - rowPerPage = template_configuration.rows_in_first_page
+                                else if loopTable === (template_configuration.loop_table )
+                                    - rowPerPage = template_configuration.rows_in_last_page
+                                else
+                                    - rowPerPage = template_configuration.rows_per_pages
+                                
+                                - var rowDoneThisPage = 0;
+                                - var rowIndex = 0;
+                                - var rowPointer = rowCounter;
+                                - while (rowDoneThisPage < rowPerPage) {
+                                    each article in articles
+                                        tr
+                                            if (rowDoneThisPage > rowPerPage)
+                                                - break;
+                                            if (rowIndex < rowPointer)
+                                                - rowIndex++;
+                                            else
+                                                - rowIndex++;
+                                                - rowDoneThisPage++;
+                                                - rowCounter++;
+                                                each field in article
+                                                    td #{field}
+                                -}
+                        
                                 if( rowCounter == articles.length-1)
                                     tr
-                                        td(colspan=article.length)
+                                        td(colspan=articles[0].length)
                                             div.balance
                                                 div(style="float: left;") Closing Balance (excluding FBT)
-                                                div(style="float: right;") #{article[article.length-1]}
+                                                div(style="float: right;") #{articles[articles.length-1][articles[0].length-1]}
 
-                                - rowCounter++;
+                                if loopTable > 1
+                                    div(style='page-break-after:always')
+                                - loopTable++;
 
+                                
     
 

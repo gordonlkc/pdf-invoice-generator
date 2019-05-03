@@ -1,6 +1,6 @@
 {
   "name": "@js-library/invoice-generator",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Order and invoice generator",
   "main": "dist/index.js",
   "scripts": {

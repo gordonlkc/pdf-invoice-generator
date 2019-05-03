@@ -49,6 +49,446 @@ invoice.articles = [
   "525.20",
   "",
   "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
+],
+[
+  "Payroll Deduction",
+  "24/08/2017",
+  "144102894",
+  "1",
+  "Deduction",
+  "525.20",
+  "",
+  "526.21 Cr"
 ]
 ];
 
@@ -79,22 +519,42 @@ footer: {
 };
 
 invoice.template_configuration = {
-  subject: "Activity Statement",
-  subtitle: "Salary Packaging Statement for the period FBT year to date"
-  };
+  rows_in_first_page: 25,
+  rows_per_pages: 43,
+  rows_in_last_page: 43
+};
 
-console.log(invoice);
+let nbArticles = invoice.articles.length;
+let loop = 1;
+while (true) {
+  if (loop === 1) {
+    nbArticles -= invoice.template_configuration.rows_in_first_page;
+    if (nbArticles <= 0) {
+      invoice.template_configuration.loop_table = (invoice.template_configuration.rows_in_first_page !== invoice.template_rows_per_page ? 1 : 2);
+      break;
+    }
+  }
+  if (loop >= 2) {
+    if (nbArticles <= invoice.template_configuration.rows_in_last_page) {
+      invoice.template_configuration.loop_table = loop;
+      break;
+    }
+    nbArticles -= invoice.template_configuration.rows_per_pages;
+    if (nbArticles <= 0) {
+      invoice.template_configuration.loop_table = loop;
+      break;
+    }
+  }
+  loop += 1;
+}
 
 invoice
 .getInvoice()
 .toPDF(options)
-.toBuffer()
-.then((result) => {
-  console.log(result);
-})
-.catch((error)=>{
-  console.log(error);
-})
+.toFile("./invoice.pdf")
+.then(() => {
+  console.log("file created.");
+});
 
 invoice
 .getInvoice()
