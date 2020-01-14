@@ -1,6 +1,6 @@
 {
-  "name": "@js-library/invoice-generator",
-  "version": "1.0.5",
+  "name": "pdf-invoice-generator",
+  "version": "1.0.6",
   "description": "Order and invoice generator",
   "main": "dist/index.js",
   "scripts": {
@@ -24,7 +24,11 @@
   ],
   "author": {
     "name": "Gordon Lam",
-    "email": "gordon.lam@evolvingsolutions.com.au"
+    "email": "me@gordonlam.space"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gordonlkc/pdf-invoice-generator"
   },
   "engines": {
     "node": ">=6"
