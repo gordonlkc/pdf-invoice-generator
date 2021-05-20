@@ -34,7 +34,7 @@
     "node": ">=6"
   },
   "dependencies": {
-    "html-pdf": "^2.2.0",
+    "html-pdf": "^3.0.1",
     "i18n-factory": "0.0.2",
     "json-override": "^0.2.0",
     "moment": "^2.24.0",
@@ -42,7 +42,7 @@
     "uuid": "^3.3.2"
   },
   "peerDependencies": {
-    "html-pdf": "^2.2.0"
+    "html-pdf": "^3.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
