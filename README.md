@@ -5,7 +5,7 @@ If you want some examples, check tests.
 
 ## Install
 ```
-$ npm install invoice-generator --save
+$ npm install pdf-invoice-generator --save
 ```
 
 ## Features
@@ -22,12 +22,12 @@ $ npm install invoice-generator --save
 
 **From import**
 ```javascript
-import invoiceGenerator from 'invoice-generator';
+import invoiceGenerator from 'pdf-invoice-generator';
 ```
 
 **From require**
 ```javascript
-const invoiceGenerator = require('invoice-generator');
+const invoiceGenerator = require('pdf-invoice-generator');
 ```
 
 **If you want to export your invoice in PDF, you must install the *html-pdf (v2.2.0)* peer dependence**
@@ -40,7 +40,7 @@ $ npm i -S html-pdf@2.2.0
 To generate an invoice:
 
 ```js
-const invoiceGenerator = require('invoice-generator');
+const invoiceGenerator = require('pdf-invoice-generator');
 
 invoiceGenerator.configure({
   global: {
